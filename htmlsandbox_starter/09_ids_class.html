@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Div, span, id and class</title>
+    <style>
+      .card {
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      .enhance {
+        color: yellow;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Classes can be repeated, id should not be repeated -->
+    <div id="main-header">
+      <h1>My Website</h1>
+      <p>A site about me</p>
+    </div>
+    <ul id="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="about" class="card">
+      <h3>About</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+        voluptates libero quo at inventore modi ad autem temporibus impedit
+        fuga, numquam id<span class="enhance"> molestiae aperiam facere earum aliquam velit provident
+        amet eveniet neque!</span> Iure aperiam placeat dolor porro nesciunt inventore
+        quia fugiat, ipsum error soluta dignissimos voluptates exercitationem,
+        nobis eum eos.
+      </p>
+    </div>
+    <div id="contact" class="card">
+      <h3>Contact me</h3>
+      <ul>
+        <li>Address: 27. Hivzija Catovic, Rozaje, Montenegro</li>
+        <li>Phone: 067850290</li>
+        <li>Email: selimagovic@gmail.com</li>
+      </ul>
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; 2021</p>
+    </div>
+  </body>
+</html>
