@@ -184,7 +184,7 @@
       </div>
     </section>
     <!-- Contact -->
-    <section id="contact" class="solutions flex-columns">
+    <section id="contact" class="flex-columns">
       <div class="row">
         <div class="column">
           <div class="column-1">
@@ -193,7 +193,7 @@
         </div>
         <div class="column">
           <div class="column-2 bg-light">
-            <form action="" class="callback-form">
+            <form action="process.php" method="POST" class="callback-form">
               <h2>Request Callback</h2>
               <div class="form-control">
                 <label for="name"></label>
@@ -206,6 +206,10 @@
               <div class="form-control">
                 <label for="phone"></label>
                 <input type="text" name="phone" id="phone" placeholder="Please Insert Phone">
+              </div>
+              <div class="form-control">
+                <label for="phone"></label>
+                <textarea type="text" name="message" id="message" placeholder="Please Insert Message"></textarea>
               </div>
               <input type="submit" value="Send" id="submit" class="btn">
 
@@ -247,7 +251,7 @@
     };
 
     //Smooth Scrolling
-    $('#navbar a, .btn').on('click', function (e) {
+    $('#navbar a').on('click', function (e) {
       if (this.hash !== '') {
         e.preventDefault();
         const hash = this.hash;
